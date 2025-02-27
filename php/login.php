@@ -1,7 +1,7 @@
 <?php
 //Enlazamos los ficheros a la Configuración de la Base de Datos
 session_start();
-include "../db/config-db.php";
+include "config-db.php";
 
 //Activamos el fichero al enviar el Usuario y Contraseña
 if($_SERVER['REQUEST_METHOD']=="POST"){
