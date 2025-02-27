@@ -1,0 +1,124 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styleMain.css">
+        <script src="../js/otro.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container-text">
+            <h2>Eventos Próximos</h2>
+        </div><br>
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <img src="../img/carrusel1.jpg" alt="Imagen 1">
+                    <img src="../img/carrusel2.png" alt="Imagen 2">
+                    <img src="../img/carrusel3.png" alt="Imagen 3">
+                    <img src="../img/carrusel4.jpeg" alt="Imagen 4">
+                    <img src="../img/carrusel5.jpeg" alt="Imagen 5">
+                    <img src="../img/carrusel1.jpg" alt="Imagen 1">
+                    <img src="../img/carrusel2.png" alt="Imagen 2">
+                    <img src="../img/carrusel3.png" alt="Imagen 3">
+                    <img src="../img/carrusel4.jpeg" alt="Imagen 4">
+                    <img src="../img/carrusel5.jpeg" alt="Imagen 5">
+                    <img src="../img/carrusel1.jpg" alt="Imagen 1">
+                    <img src="../img/carrusel2.png" alt="Imagen 2">
+                    <img src="../img/carrusel3.png" alt="Imagen 3">
+                    <img src="../img/carrusel4.jpeg" alt="Imagen 4">
+                    <img src="../img/carrusel5.jpeg" alt="Imagen 5">
+                    <img src="../img/carrusel1.jpg" alt="Imagen 1">
+                    <img src="../img/carrusel2.png" alt="Imagen 2">
+                    <img src="../img/carrusel3.png" alt="Imagen 3">
+                    <img src="../img/carrusel4.jpeg" alt="Imagen 4">
+                    <img src="../img/carrusel5.jpeg" alt="Imagen 5">
+                </div>
+            </div>
+        </div>
+        <div class="container-text">
+            <h2>Eventos Pasados</h2>
+        </div><br>
+        <div class="carousel-container">
+            <div class="carousel-wrapper2">
+                <div class="carousel">
+                    <img src="../img/f4.jpg" alt="Imagen 1">
+                    <img src="../img/f5.jpg" alt="Imagen 2">
+                    <img src="../img/f6.jpg" alt="Imagen 3">
+                    <img src="../img/f7.jpg" alt="Imagen 4">
+                    <img src="../img/f10.jpg" alt="Imagen 5">
+                    <img src="../img/f14.jpg" alt="Imagen 1">
+                    <img src="../img/f15.jpg" alt="Imagen 2">
+                    <img src="../img/f17.jpg" alt="Imagen 3">
+                    <img src="../img/f20.jpg" alt="Imagen 4">
+                    <img src="../img/f25.jpg" alt="Imagen 5">
+                    <img src="../img/carrusel1.jpg" alt="Imagen 1">
+                    <img src="../img/carrusel2.png" alt="Imagen 2">
+                    <img src="../img/carrusel3.png" alt="Imagen 3">
+                    <img src="../img/carrusel4.jpeg" alt="Imagen 4">
+                    <img src="../img/carrusel5.jpeg" alt="Imagen 5">
+                    <img src="../img/carrusel1.jpg" alt="Imagen 1">
+                    <img src="../img/carrusel2.png" alt="Imagen 2">
+                    <img src="../img/carrusel3.png" alt="Imagen 3">
+                    <img src="../img/carrusel4.jpeg" alt="Imagen 4">
+                    <img src="../img/carrusel5.jpeg" alt="Imagen 5">
+                </div>
+            </div>
+        </div>
+        <div class="container-text">
+            <h2>Descuentos...</h2>
+        </div>
+        <div class="contenedor-encuesta">
+        <h3>Realiza estas encuestas para ganar un descuento en tus compras y reservas</h3>
+        Pulsa <a href="../encuesta1.html">AQUI</a> para acceder el primer cuestionario.
+        </div>
+
+        <div class="container-text">
+            <h2>Reservas</h2>
+        </div>
+        <div class="reserva-container">
+            <form action="php/reservas.php" method="POST">
+                <label for="tipo">Selecciona el tipo de reserva:</label>
+                <select name="tipo" id="tipo">
+                    <option value="Mesa">Mesa - 17€</option>
+                    <option value="VIP">Reservado VIP - 30€</option>
+                    <option value="Cachimba">Cachimba - 9€</option>
+                    <option value="Cachimba_VIP">Cachimba + VIP - 24€</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" name="cantidad" id="cantidad" min="1" value="1" required>
+
+                <button type="submit">Reservar</button>
+            </form>
+        </div>
+
+        <div class="container-text">
+            <h2>Mis reservas</h2>
+        </div>
+        <div id="misReservas"></div>
+
+        <div class="container-text">
+            <h2>Suscripción VIP</h2>
+        </div>
+        <div class="vip-container">
+            <p>Hazte VIP por <strong>30€/mes</strong> y obtén descuentos en tus reservas.</p>
+            <button id="btnSuscribirse">Pagar Suscripción</button>
+            <button id="btnCancelarVIP" style="display: none;">Cancelar Suscripción</button>
+        </div>
+
+        <div id="mensajePago" style="display: none; color: green;">Pago realizado con éxito.</div>
+        <div id="estadoVIP"></div>
+
+
+        <div id="mensajePago" style="display: none; color: green;">
+            Pago realizado con éxito. <a href="php/comprobante.php" target="_blank">Ver comprobante</a>
+        </div>
+
+        <div class="container-text">
+            <h2>Historial de Pagos</h2>
+        </div>
+        <div id="historialPagos"></div>
+    </body>
+    </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="css/style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>MINES</title>
+</head>
+<body>
+    <div class="cartel1">
+        <h1 style="text-align: center;font-size: 6em;font-family: 'Loboto';">MINES</h1>
+        <h1 style="text-align: center;font-size: 4em;font-family:'Caveat';"> TU Noche, TU Lugar, TU Ritmo...</h1>
+    </div><br><br><br>
+    <div class="text-container">
+        <h2>¿Todavía no tienes una cuenta?</h2><br><br><br>
+        <h2>¿Ya formas parte de MINES?</h2><br><br><br><br><br>
+    </div>
+    <div class="login-container">
+        <div class="login-card">
+            <h2>Regístrate</h2>
+            <h3>Introduce tus credenciales</h3>
+            <form class="login-form" method="POST" action="php/registro.php">
+                <i class='bx bxs-user'></i>
+                <input type="text" placeholder="Nombre de Usuario" name="nombre">
+                <i class='bx bxs-envelope' ></i>
+                <input type="email" placeholder="Correo electrónico" name="email">
+                <i class='bx bxs-lock-alt' ></i>
+                <input type="password" placeholder="Contraseña" name="contraseña">
+                <a href="#">Olvidaste la Contraseña?</a>
+                <button type="submit">REGISTRARME</button>
+            </form>
+        </div><br><br><br>
+        <div class="login-card">
+            <div class="login-form">
+                <h2>Inicia Sesión</h2>
+                <h3>Introduce tus credenciales</h3>
+                <form action="php/otro.html" method="POST" class="login-form">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" placeholder="Nombre de Usuario" name="user" required>
+                    <i class='bx bxs-lock-alt' ></i>
+                    <input type="password" placeholder="Contraseña" name="psw" required>
+                    <a href="#">Olvidaste la Contraseña?</a>
+                    <button type="submit">INICIA SESIÓN</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

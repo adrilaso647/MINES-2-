@@ -1,0 +1,108 @@
+body{
+    background-image: url(../img/f3.jpg);
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+    color:white;
+    font-size: 3em;
+}
+h1{
+    color:white;
+}
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.carousel-container {
+    border:6px solid black;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    padding: 30px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin-bottom: 100px;
+}
+.carousel-wrapper {
+    display: flex;
+    width: max-content;
+    animation: scroll2 10s linear infinite;
+}
+.carousel-wrapper2 {
+    display: flex;
+    width: max-content;
+    animation: scroll1 10s linear infinite;
+}
+.carousel-container:hover .carousel-wrapper {
+    animation-play-state: paused;
+}
+.carousel-container:hover .carousel-wrapper2 {
+    animation-play-state: paused;
+}
+.carousel {
+    display: flex;
+}
+.carousel img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: filter 0.3s ease-in-out;
+}
+.carousel:hover img {
+    filter: grayscale(100%) blur(3px);
+}
+.carousel img:hover {
+    filter: grayscale(0%) blur(0);
+}
+@keyframes scroll1 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+@keyframes scroll2 {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+.container-text{
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 50px;
+    margin-top: 50px;
+    margin-left:50px;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: center;
+    border:2px solid red;
+}
+.contenedor-encuesta{
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    color:white;
+    font-size: 2em;
+    margin-top: 20px;
+    border:2px solid red;
+}
+a{
+    color:blue;
+    text-decoration: none;
+}
+a:hover{
+    transition: 1.5s;
+    text-decoration: underline;
+}

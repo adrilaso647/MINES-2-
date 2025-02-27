@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos-encuesta.css">
+    <link rel="icon" href="MINES.ico">
+    <title>Encuesta MINESS</title>
+</head>
+<body>
+    <div class="encuesta">
+        <div class="primer-form">
+            <form method="get" class="formul">
+                <h2>Login</h2><br>
+                <label for="usuario">Usuario: </label>
+                <input type="text" placeholder="Nombre Usuario" class="form-user"><br><br>
+                <label for="password">Contraseña: </label>
+                <input type="password" placeholder="**************">
+            </form><br><br>
+        </div>
+        <div class="segundo-form">
+            <form action="" method="get" class="formul">
+                <ul>
+                    <li>
+                        <label for="pr1">¿Qué es lo que más te motivó a venir hoy?</label><br><br>
+                        <input type="radio" name="ans1" value="Por mis colegas">Por mis colegas
+                        <input type="radio" name="ans1" value="Por Curiosidad">Por Curiosidad
+                        <input type="radio" name="ans1" value="Por el ambiente">Por el ambiente
+                        <input type="radio" name="ans1" value="Otro">Otro <br><br>
+                    </li>
+                    <li>
+                        <label for="pr2">Describe las vibras del lugar en una palabra</label><br>
+                        <input type="text"><br><br>
+                    </li>
+                    <li>
+                        <label for="pr3">¿Cual dirías que ha sido el mejor momento de la noche?</label><br>
+                        <textarea></textarea><br><br>
+                    </li>
+                    <li>
+                        <label for="pr4">¿Cómo consideras del 1 al 10 el diseño del establecimiento?</label><br>
+                        <div class="main">
+                            <input type="range" min="1" max="10" id="slider">
+                            <div id="selector">
+                                <div class="selectBTN"></div>
+                                <div id="selectValue"></div>
+                        </div>
+                        </div><br><br>
+                    </li>
+                    <li>
+                        <label for="pr5">¿Cómo calificarías la atmósfera de la discoteca?</label><br>
+                        <input type="radio" name="ans5" value="Perfecta">Perfecta
+                        <input type="radio" name="ans5" value="Muy Buena">Muy Buena
+                        <input type="radio" name="ans5" value="Buena">Buena
+                        <input type="radio" name="ans5" value="Mala">Mala
+                        <input type="radio" name="ans5" value="Muy Mala">Muy Mala<br><br>
+                    </li>
+                    <li>
+                        <label for="pr6">¿Cómo has notado la temperatura del local?</label><br>
+                        <input type="radio" name="ans6" value="Muy Fría">Muy Fría
+                        <input type="radio" name="ans6" value="Fría">Fría
+                        <input type="radio" name="ans6" value="Normal">Normal
+                        <input type="radio" name="ans6" value="Caliente">Caliente
+                        <input type="radio" name="ans6" value="Muy Caliente">Muy Caliente<br><br>
+                    </li>
+                    <li>
+                        <label for="pr7">¿Cómo valorarías la música?</label><br>
+                        <input type="radio" name="ans7" value="Muy Buena">Muy Buena
+                        <input type="radio" name="ans7" value="Buena">Buena
+                        <input type="radio" name="ans7" value="Normal">Normal
+                        <input type="radio" name="ans7" value="Mala">Mala
+                        <input type="radio" name="ans7" value="Muy Mala">Muy Mala<br><br>
+                    </li>
+                    <li>
+                        <label for="pr8">¿Te gustaría que se pudiera elegir la música a tiempo real?</label><br>
+                        <input type="radio" name="ans8" value="Si">Si
+                        <input type="radio" name="ans8" value="No">No<br><br>
+                    </li>
+                    <li>
+                        <label for="pr9">¿Qué género Musical sueles escuchar?</label><br>
+                        <input type="checkbox" name="ans9" value="Rock">Rock
+                        <input type="checkbox" name="ans9" value="Blues">Blues
+                        <input type="checkbox" name="ans9" value="Dembow">Dembow
+                        <input type="checkbox" name="ans9" value="Regueton">Regueton
+                        <input type="checkbox" name="ans9" value="Otro">Otro <br><br>
+                    </li>
+                    <li>
+                        <label for="pr10">¿Consideras que ha habido una buena música?</label><br>
+                        <input type="radio" name="ans10" value="Si">Si
+                        <input type="radio" name="ans10" value="No">No
+                    </li><br><br>
+                    <li>
+                        <label for="pr11">¿Cómo calificarias del 1 al 10 la rapidez en la barra?</label><br>
+                        <input type="range" min="1" max="10" id="slider">
+                    </li><br><br>
+                    <li>
+                        <label for="pr12">¿Te gustaría que se hicieran cócteles temáticos, acorde al DJ y al estilo de música?</label><br>
+                        <input type="radio" name="ans12" value="Si">Si
+                        <input type="radio" name="ans12" value="No">No
+                    </li><br><br>
+                    <li>
+                        <label for="pr13">¿Hay algo que tengan otras discotecas que no tengamos nosotros?</label><br>
+                        <input type="radio" name="ans13" value="Si">Si
+                        <textarea name="ans13"></textarea>
+                        <input type="radio" name="ans13" value="No">No
+                    </li><br><br>
+                    <li>
+                        <label for="pr14">¿Te gustaría que desarrollasemos una aplicacion móvil para gestionar las bebidas y las reservas?</label><br>
+                        <input type="radio" name="ans14" value="Si">Si
+                        <input type="radio" name="ans14" value="No">No
+                    </li><br><br>
+                    <li>
+                        <label for="pr15">¿Volverías a esta Discoteca?</label><br>
+                        <input type="radio" name="ans15" value="Si">Si
+                        <input type="radio" name="ans15" value="No">No
+                    </li><br><br>
+                        <button onclick="" type="submit" class="finalizar">Enviar</button>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <script>
+        var slider=document.getElementById("slider");
+        var selector=document.getElementById("selector");
+        slider.oninput=function(){
+            selector.style.left=this.value +"%";
+        }
+    </script>
+</body>
+</html>
